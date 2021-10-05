@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Cloud Analogy\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Cloud Analogy\\.nuget\\packages"
+    ]
+  }
+}
