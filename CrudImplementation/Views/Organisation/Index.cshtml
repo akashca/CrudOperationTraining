@@ -8,9 +8,9 @@
 
 <p>
    
-        <a asp-action="Create">Create New</a>
+        <a asp-action="Create" class="btn btn-info">Create New</a>
 </p>
-<table class="table">
+<table class="table table-bordered table-striped table-hover">
     <thead>
         <tr>
             <th>
@@ -39,9 +39,9 @@
                     @Html.DisplayFor(modelItem => item.OrganisationAddress)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.OrganisationId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.OrganisationId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.OrganisationId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.OrganisationId }, new { @class = "btn btn-warning" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.OrganisationId }, new { @class = "btn btn-info" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.OrganisationId }, new { @class = "btn btn-danger" })
                 </td>
             </tr>
         }

@@ -20,6 +20,7 @@ C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\De
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
@@ -114,6 +115,7 @@ C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\De
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\CrudImplementation.csproj.AssemblyReference.cache
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\CrudImplementation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\CrudImplementation.AssemblyInfoInputs.cache
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\CrudImplementation.AssemblyInfo.cs
@@ -152,4 +154,3 @@ C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\De
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\ref\CrudImplementation.dll
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\CrudImplementation.pdb
 C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\CrudImplementation.genruntimeconfig.cache
-C:\Users\Cloud Analogy\source\repos\CrudImplementation\CrudImplementation\obj\Debug\net5.0\CrudImplementation.csproj.AssemblyReference.cache

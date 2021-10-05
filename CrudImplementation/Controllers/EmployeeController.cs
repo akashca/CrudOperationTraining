@@ -17,29 +17,24 @@ namespace CrudImplementation.Controllers
     public class EmployeeController : Controller
     {
         private readonly ApplicationDbContext _db;
+        public IEnumerable<Organisation> organisationList { get; set; }
+
         public EmployeeController(ApplicationDbContext db)
         {
             _db = db;
-        }
-        public IEnumerable<Organisation> Displaydt { get; set; }
+            organisationList = _db.Organisation.ToList();
 
-        public  IActionResult OnGet()
-        {
-            Displaydt =  _db.Organisation.ToList();
-            return View();
         }
-
 
         public IActionResult Index()
         {
-            //var List = (from r in _db.Organisation select r).ToList();
-            //ViewBag.Organisation = new SelectList(List, "OrganisationId", "OrganisationName");
             var displaydata = _db.Employees.ToList();
             return View(displaydata);
          }
 
         public IActionResult create()
         {
+            ViewBag.Organisation = new SelectList(organisationList, "OrganisationId", "OrganisationName");
             return View();
         }
 
@@ -57,6 +52,7 @@ namespace CrudImplementation.Controllers
 
         public async Task<IActionResult> Edit(int? id)
         {
+            ViewBag.Organisation = new SelectList(organisationList, "OrganisationId", "OrganisationName");
             var employeedetails = await _db.Employees.FindAsync(id);
             return View(employeedetails);
 

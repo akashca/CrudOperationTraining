@@ -54,7 +54,7 @@ namespace CrudImplementation
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Employee}/{action=Index}/{id?}");
+                    pattern: "{controller=Organisation}/{action=Index}/{id?}");
             });
         }
     }

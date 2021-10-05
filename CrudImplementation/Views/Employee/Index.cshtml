@@ -5,39 +5,48 @@
 @{
     ViewData["Title"] = "Index";
 
-    }
-<h1>Index</h1>
+}
+<link href="C:\Users\Cloud Analogy\.nuget\packages\bootstrap\5.1.0\contentFiles\any\any\wwwroot\css\bootstrap.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="C:\Users\Cloud Analogy\.nuget\packages\bootstrap\5.1.0\contentFiles\any\any\wwwroot\js\bootstrap.js"></script>
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="container">
+    <h1>Index</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.EmpId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EmployeeName)
-            </th>
-                  <th>
-                @Html.DisplayNameFor(model => model.OrganisationId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EmailId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Mobile)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Gender)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Age)
-            </th>
-        </tr>
-    </thead>
+    <p>
+        <a asp-action="Create" class="btn btn-info">Create New</a>
+      
+    </p>
+        <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.EmpId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.EmployeeName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.OrganisationId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.EmailId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Mobile)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Gender)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Age)
+                            </th>
+                        </tr>
+                    </thead>
+            
+        
+    
     <tbody>
         @foreach (var item in Model)
         {
@@ -63,13 +72,15 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Age)
                 </td>
-                
+
+
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.EmpId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.EmpId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.EmpId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.EmpId }, new { @class = "btn btn-warning"  }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.EmpId }, new { @class = "btn btn-info" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.EmpId },new { @class = "btn btn-danger" })
                 </td>
             </tr>
         }
     </tbody>
-</table>
+            </table>
+</div>
